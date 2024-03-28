@@ -10,8 +10,8 @@ class InputData(BaseModel):
 
 @app.post("/predict")
 def predict(data: InputData):
-    preprocessor = load('/Users/antoinebertin/Documents/jedha/full_stack/projects_full_stack/deploy_ml/preprocessor.joblib')
-    model = load('/Users/antoinebertin/Documents/jedha/full_stack/projects_full_stack/deploy_ml/model.joblib')
+    preprocessor = load('./preprocessor.joblib')
+    model = load('./model.joblib')
     #user_test = ['Renault', 186382, 120, 'diesel', 'silver', 'estate', 1, 1, 0, 0,0, 0, 1]
     user_test = data.data[0]
     print('######################MSG###########')
