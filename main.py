@@ -4,8 +4,8 @@ import pandas as pd
 # Load your data
 @st.cache_data
 def load_data():
-    delay_df = pd.read_excel("/Users/antoinebertin/Documents/jedha/full_stack/projects_full_stack/deploy_ml/get_around_delay_analysis.xlsx")
-    pricing_df = pd.read_csv("/Users/antoinebertin/Documents/jedha/full_stack/projects_full_stack/deploy_ml/get_around_pricing_project.csv")
+    delay_df = pd.read_excel('get_around_delay_analysis.xlsx') #pd.read_excel("/Users/antoinebertin/Documents/jedha/full_stack/projects_full_stack/deploy_ml/get_around_delay_analysis.xlsx")
+    pricing_df = pd.read_csv('get_around_pricing_project.csv') #pd.read_csv("/Users/antoinebertin/Documents/jedha/full_stack/projects_full_stack/deploy_ml/get_around_pricing_project.csv")
     return delay_df, pricing_df
 
 delay_df, pricing_df = load_data()
