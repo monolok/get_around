@@ -3,7 +3,6 @@
 The EDA here was mostly used to understand the data and check what features will be the most helpful for me to build the model (`model.ipynb`) that is later saved (joblib) to be used by the Streamlit app via the API deployed. The focus was mostly centered on building a dashboard to answer the following questions:
 - Which share of our owner’s revenue would potentially be affected by the feature?
 - How many rentals would be affected by the feature depending on the threshold and scope we choose?
-```
 
 # Documentation and API Reference
 
@@ -55,5 +54,3 @@ class InputData(BaseModel):
 ```
 
 This ensures that the API expects JSON data with a `data` key containing a list of input values.
-
-```
